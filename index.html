@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Literário | Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <header>
+            <nav class="navbar navbar-dark bg-dark sticky-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand me-auto" href="index.html">📚 Livros Clássicos</a>
+            
+                    <button class="btn btn-secondary" type="button" 
+                            data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav" 
+                            aria-controls="offcanvasNav">
+                        Menu
+                    </button>
+                </div>
+            </nav>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
+            
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavLabel">Navegação Principal</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link active fs-5" aria-current="page" href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="#cards-livros">Catálogo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="#info-aluno">Sobre</a>
+                        </li>
+                    </ul>
+                    <hr class="my-4 text-white-50">
+                    <p class="text-white-50 small">Desenvolvido com Bootstrap 5</p>
+                </div>
+            </div>
+            </header>
+
+    <main class="container my-5">
+        
+        <h2 class="mb-4 text-center">Livros em Destaque</h2>
+        <div id="carouselDestaques" class="carousel slide">
+            <div class="carousel-inner" id="slider-destaques-container">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center align-items-center bg-light p-5" style="height: 400px;">
+                        <span class="text-muted">Carregando Destaques...</span>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestaques" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselDestaques" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+
+        <main class="container my-5">
+            <div class="catalogo">
+            <div class="row">
+                
+                <div class="col-md-4">
+                    <img id="detalhes-imagem" src="assets/img/jane_austen.jpg" alt="Jane Austen" class="img-fluid rounded shadow">
+                </div>
+        
+                <div class="col-md-8">
+                    <h1 id="detalhes-titulo">Jane Austen</h1>
+                    <p class="lead text-muted" id="detalhes-nacionalidade-data">Inglesa | 16 de dezembro de 1775</p>
+        
+                    <p class="mt-4">Foi uma renomada romancista inglesa do século XIX, conhecida por seus seis romances principais, que incluem Orgulho e Preconceito, Razão e Sensibilidade e Emma. Suas obras, publicadas anonimamente em vida, retratam a vida da gentry rural, com um toque de crítica social e humor irônico, abordando temas como o casamento, a posição social e a dependência econômica das mulheres de sua época. </p>
+                    <div id="detalhes-obras-lista" class="list-group">
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </main>
+        
+        <hr class="my-5">
+
+        </main>
+
+        <main class="container my-5">
+            <div class="catalogo">
+            <div class="row">
+                
+                <div class="col-md-4">
+                    <img id="detalhes-imagem" src="assets/img/george orwell.jpg" alt="George Orwell" class="img-fluid rounded shadow">
+                </div>
+        
+                <div class="col-md-8">
+                    <h1 id="detalhes-titulo">George Orwell</h1>
+                    <p class="lead text-muted" id="detalhes-nacionalidade-data">Ingles | 25 de junho de 1903</p>
+        
+                    <p class="mt-4">Foi um escritor, ensaísta e jornalista inglês conhecido por obras como A Revolução dos Bichos e 1984, que criticam o totalitarismo e defendem o pensamento livre. Nascido na Índia, ele estudou na Inglaterra e serviu na Polícia Imperial Indiana antes de se dedicar à escrita e se tornar uma voz influente do socialismo democrático e do anti-fascismo.  </p>
+                    <div id="detalhes-obras-lista" class="list-group">
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </main>
+        
+        <hr class="my-5">
+
+        </main>
+
+        <main class="container my-5">
+            <div class="catalogo">
+            <div class="row">
+                
+                <div class="col-md-4">
+                    <img id="detalhes-imagem" src="assets/img/gabriel_garcia_marquez.jpg" alt="Gabriel Garcia Marquez" class="img-fluid rounded shadow">
+                </div>
+        
+                <div class="col-md-8">
+                    <h1 id="detalhes-titulo">Gabriel Garcia Marquez</h1>
+                    <p class="lead text-muted" id="detalhes-nacionalidade-data">Colombiano | 6 de março de 1927. </p>
+        
+                    <p class="mt-4">Foi um escritor, jornalista e roteirista colombiano, autor de obras-primas como "Cem Anos de Solidão" e "O Amor nos Tempos do Cólera". Ele foi uma figura central do realismo mágico, ganhador do Prémio Nobel da Literatura em 1982 pelo conjunto da sua obra. Sua infância em Aracataca, marcada por histórias de avós e folclore, influenciou profundamente o estilo literário único que mescla o real e o fantástico.   </p>
+                    <div id="detalhes-obras-lista" class="list-group">
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </main>
+        
+        <hr class="my-5">
+
+        </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    </body>
+</html>

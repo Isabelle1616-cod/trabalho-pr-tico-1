@@ -1,0 +1,38 @@
+/*
+ * Regras essenciais para o Catálogo e Carrossel
+ */
+
+/* Estilo para a imagem de capa nos cards do Catálogo */
+.card-img-top {
+    width: 100%;
+    height: 300px; /* Altura fixa para os cards */
+    object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+}
+
+/* Estilo para a imagem principal (se houver) */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Media Query para responsividade em telas menores (Mobile) */
+@media (max-width: 768px) {
+    /* Ajusta a altura da imagem nos cards para mobile */
+    .card-img-top {
+        height: 200px; 
+    }
+
+    /* Centraliza o texto no carrossel em mobile */
+    #slider-destaques-container .row {
+        text-align: center;
+    }
+    
+    /* No carrossel em mobile, a imagem é menor */
+    #slider-destaques-container img {
+        max-height: 250px !important;
+        width: 50% !important;
+        margin-bottom: 15px;
+    }
+}
+
