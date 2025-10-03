@@ -16,6 +16,7 @@
 }
 
 
+
 /* Media Query para responsividade em telas menores (Mobile) */
 @media (max-width: 768px) {
     /* Ajusta a altura da imagem nos cards para mobile */
@@ -24,7 +25,7 @@
     }
 
     /* Centraliza o texto no carrossel em mobile */
-    #slider-destaques-container .row {
+    #slider-destaques-container .catalogo {
         text-align: center;
     }
     
